@@ -3,8 +3,8 @@ ASCII art. A program that will read a configuration-file that contains circle pa
 
 ## Table of contents
 * [Introduction](#introduction)
-* [Requirements](#requirements)
-* [Launch](#launch)
+* [Prerequisites](#prerequisites)
+* [How to launch](#how-to-launch)
 * [Configuration-file](#configuration-file)
 * [Example](#example)
 * [Notes](#notes)
@@ -64,11 +64,11 @@ A "pixel" with a top left corner with a distance bigger or equal to 1 from the b
 The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated with ```
 srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))```.
 
-## Requirements
+## Prerequisites
 * gcc
 
 
-## Launch
+## How to launch
 Compile the program as follows (using the "-lm" flag to link "<math.h>"):
 
 ```
@@ -79,6 +79,7 @@ Run it by giving it the path to the configuration-file as argument (in this case
 ```
 $ ./a.out examples/blueprint2
 ```
+For the required configuration-file format see: [Configuration-file](#configuration-file).
 
 
 ## Example
