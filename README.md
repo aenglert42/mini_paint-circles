@@ -36,7 +36,7 @@ The following lines of the file define the circles to be drawn. The format is as
 ```
 TYPE X Y RADIUS CHAR
 ```
-* _TYPE_: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only the border of the circle is drawn). Whereas the character 'C' stands for a filled circle.
+* _TYPE_: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only its border is drawn). Whereas the character 'C' stands for a filled circle.
 * _X_: The horizontal position of the center of the circle. It is of type float.
 * _Y_: The vertical position of the center of the circle. It is of type float.
 * _RADIUS_: The radius of the circle. A float bigger than 0.
