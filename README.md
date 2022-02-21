@@ -11,8 +11,8 @@ ASCII art. A program that will read a configuration-file that contains circle pa
 
 ## Introduction
 Inspired by the 42 coding school exercise "mini_paint" (November 2021).
-
-
+ 
+ 
 ### Allowed functions
 fopen, fread, fscanf, fclose, write, malloc, calloc, realloc, free, memset, powf, sqrtf
 
@@ -54,7 +54,8 @@ The draw zone is divided in rectangles that can contain one character each. They
 Only the top left corner of the "pixels" will be used as point of reference to determine its position. If the distance between the top left corner of a "pixel" and the center of a circle is lower or equal to the radius of the circle, the pixel is part of the circle.
 A "pixel" with a top left corner with a distance bigger or equal to 1 from the border of a circle is not part of an empty circle. A "pixel" with a top left corner with a distance lower than 1 from the border of a circle is part of an empty circle.
 
-The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated like this: srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))
+The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated like this:
+srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))
 
 
 ## Requirements
