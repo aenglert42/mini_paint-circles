@@ -31,15 +31,14 @@ There must be at least one space between each variable in a line.
 
 The first line of the file defines the drawing zone. The program should not display anything outside of it. The format is as follows:
 
-__WIDTH HEIGHT CHAR__
+_WIDTH HEIGHT CHAR_
 * WIDTH: The horizontal number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
 * HEIGHT: The vertical number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
 * CHAR: The char used to fill the drawing zone (background).
 
 The following lines of the file define the circles to be drawn. The format is as follows:
 
-__TYPE X Y RADIUS CHAR__
-This operation will draw a empty circle, where only the border of the circle is drawn
+_TYPE X Y RADIUS CHAR_
 * TYPE: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only the border of the circle is drawn). Whereas the character 'C' stands for a filled circle.
 * X: The horizontal position of the center of the circle. It is of type float.
 * Y: The vertical position of the center of the circle. It is of type float.
