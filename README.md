@@ -25,15 +25,17 @@ The aim of the exercise is to write a program that will read a "configuration-fi
 The "configuration-file" serves as the "blueprint" for the "drawing".
 
 The first line of the file defines the drawing zone. The program should not display anything outside of it. The format is as follows:
-
-_WIDTH HEIGHT CHAR_
+```
+WIDTH HEIGHT CHAR
+```
 * _WIDTH_: The horizontal number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
 * HEIGHT: The vertical number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
 * CHAR: The char used to fill the drawing zone (background).
 
 The following lines of the file define the circles to be drawn. The format is as follows:
-
-_TYPE X Y RADIUS CHAR_
+```
+TYPE X Y RADIUS CHAR
+```
 * TYPE: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only the border of the circle is drawn). Whereas the character 'C' stands for a filled circle.
 * X: The horizontal position of the center of the circle. It is of type float.
 * Y: The vertical position of the center of the circle. It is of type float.
