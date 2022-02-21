@@ -8,14 +8,18 @@ ASCII art. A program that will read a configuration-file that contains circle pa
 * [Configuration-file](#configuration-file)
 * [Example](#example)
 
+
 ## Introduction
 Inspired by the 42 coding school exercise "mini_paint" (November 2021).
+
 
 ### Allowed functions
 fopen, fread, fscanf, fclose, write, malloc, calloc, realloc, free, memset, powf, sqrtf
 
+
 ### Task
 The aim of the exercise is to write a program that will read a "configuration-file" and display the result in the terminal.
+
 
 #### Configuration-file
 The "configuration-file" serves as the "blueprint" for the "drawing".
@@ -51,10 +55,12 @@ Only the top left corner of the "pixels" will be used as point of reference to d
 A "pixel" with a top left corner with a distance bigger or equal to 1 from the border of a circle is not part of an empty circle. A "pixel" with a top left corner with a distance lower than 1 from the border of a circle is part of an empty circle.
 
 The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated like this: srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))
-	
+
+
 ## Requirements
 * gcc
-	
+
+
 ## Launch
 Compile the program as follows (using the "-lm" flag to link "<math.h>"):
 
@@ -66,6 +72,7 @@ Run it by giving it the path to the configuration-file as argument (in this case
 ```
 $ ./a.out examples/blueprint2
 ```
+
 
 ## Example
 ![grafik](https://user-images.githubusercontent.com/80413516/154933714-7e821380-b55b-4b4d-ae9b-b2a1776e1e48.png)
