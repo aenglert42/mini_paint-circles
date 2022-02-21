@@ -30,12 +30,14 @@ There must be at least one space between each variable in a line.
 
 
 The first line of the file defines the drawing zone. The program should not display anything outside of it. The format is as follows:
+
 __WIDTH HEIGHT CHAR__
 * WIDTH: The horizontal number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
 * HEIGHT: The vertical number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
 * CHAR: The char used to fill the drawing zone (background).
 
 The following lines of the file define the circles to be drawn. The format is as follows:
+
 __TYPE X Y RADIUS CHAR__
 This operation will draw a empty circle, where only the border of the circle is drawn
 * TYPE: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only the border of the circle is drawn). Whereas the character 'C' stands for a filled circle.
@@ -46,10 +48,7 @@ This operation will draw a empty circle, where only the border of the circle is 
 
 The draw zone is divided in rectangles that can contain one character each. They can be seen as "pixels".
 Only the top left corner of the "pixels" will be used as point of reference to determine its position. If the distance between the top left corner of a "pixel" and the center of a circle is lower or equal to the radius of the circle, the pixel is part of the circle.
-
-A "pixel" with a top left corner with a distance bigger or equal to 1 from the border of a circle is not part of an empty circle.
-
-A "pixel" with a top left corner with a distance lower than 1 from the border of a circle is part of an empty circle.
+A "pixel" with a top left corner with a distance bigger or equal to 1 from the border of a circle is not part of an empty circle. A "pixel" with a top left corner with a distance lower than 1 from the border of a circle is part of an empty circle.
 
 The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated like this: srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))
 	
