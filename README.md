@@ -82,8 +82,8 @@ $ ./a.out examples/blueprint2
 
 
 ## Example
+_Screenshot of the terminal output using the example configuration-file "blueprint2":_
 ![grafik](https://user-images.githubusercontent.com/80413516/154933714-7e821380-b55b-4b4d-ae9b-b2a1776e1e48.png)
- _Screenshot of the terminal output using the example configuration-file "blueprint2"_
 
 ## Notes
 As it is only a small execise, I did not bother to properly free allocated memory.
