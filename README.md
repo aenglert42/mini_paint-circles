@@ -7,6 +7,7 @@ ASCII art. A program that will read a configuration-file that contains circle pa
 * [Launch](#launch)
 * [Configuration-file](#configuration-file)
 * [Example](#example)
+* [Notes](#notes)
 
 
 ## Introduction
@@ -18,11 +19,11 @@ fopen, fread, fscanf, fclose, write, malloc, calloc, realloc, free, memset, powf
 
 
 ### Description
-The aim of the exercise is to write a program that will read a "configuration-file" and display the result in the terminal.
+The aim of the exercise is to write a program that will read a configuration-file and display the result in the terminal.
 
 
 #### Configuration-file
-The "configuration-file" serves as the "blueprint" for the "drawing".
+The configuration-file serves as the "blueprint" for the "drawing".
 
 The first line of the file defines the drawing zone. The program should not display anything outside of it. The format is as follows:
 ```
@@ -43,16 +44,16 @@ TYPE X Y RADIUS CHAR
 * _CHAR_: The char used to draw the circle.
 
 #### Task
-The program must take one argument, the path to the "configuration-file".
+The program must take one argument, the path to the configuration-file.
 If the number of arguments doesn't meet these requirements the program must display "Error: argument" followed by a newline in STDOUT.
 
-If any problem occure while you opening or reading the "configuration-file" the program must display "Error: Operation file corrupted" followed by a newline in STDOUT.
+If any problem occure while you opening or reading the configuration-file the program must display "Error: Operation file corrupted" followed by a newline in STDOUT.
 
-The "configuration-file" will contain one operation per line.
+The configuration-file will contain one operation per line.
 If a line is incorrect an error occurs.
 If an error has occured the program must return 1.
 If no error has occured it must return 0.
-The last line of the "configuration-file" can be with or without a newline.
+The last line of the configuration-file can be with or without a newline.
 The lines must be read in order and the operations must be executed in the same order.
 There must be at least one space between each variable in a line.
 
@@ -83,3 +84,6 @@ $ ./a.out examples/blueprint2
 ## Example
 ![grafik](https://user-images.githubusercontent.com/80413516/154933714-7e821380-b55b-4b4d-ae9b-b2a1776e1e48.png)
  _Screenshot of the terminal output using the example configuration-file "blueprint2"_
+
+## Notes
+As it is only a small execise, I did not bother to properly free allocated memory.
