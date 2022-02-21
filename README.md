@@ -29,18 +29,18 @@ The first line of the file defines the drawing zone. The program should not disp
 WIDTH HEIGHT CHAR
 ```
 * _WIDTH_: The horizontal number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
-* HEIGHT: The vertical number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
-* CHAR: The char used to fill the drawing zone (background).
+* _HEIGHT_: The vertical number of characters to use for the draw zone. An int that has to be bigger than 0 and smaller or equal to 300.
+* _CHAR_: The char used to fill the drawing zone (background).
 
 The following lines of the file define the circles to be drawn. The format is as follows:
 ```
 TYPE X Y RADIUS CHAR
 ```
-* TYPE: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only the border of the circle is drawn). Whereas the character 'C' stands for a filled circle.
-* X: The horizontal position of the center of the circle. It is of type float.
-* Y: The vertical position of the center of the circle. It is of type float.
-* RADIUS: The radius of the circle. A float bigger than 0.
-* CHAR: The char used to draw the circle.
+* _TYPE_: Type of circle to be drawn. Two options are possible: 'c' or 'C'. Character 'c' stands for an empty circle (only the border of the circle is drawn). Whereas the character 'C' stands for a filled circle.
+* _X_: The horizontal position of the center of the circle. It is of type float.
+* _Y_: The vertical position of the center of the circle. It is of type float.
+* _RADIUS_: The radius of the circle. A float bigger than 0.
+* _CHAR_: The char used to draw the circle.
 
 #### Description
 The program must take one argument, the path to the "configuration-file".
@@ -61,9 +61,9 @@ Only the top left corner of the "pixels" will be used as point of reference to d
 A "pixel" with a top left corner with a distance bigger or equal to 1 from the border of a circle is not part of an empty circle. A "pixel" with a top left corner with a distance lower than 1 from the border of a circle is part of an empty circle.
 
 The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated like this:
-
+```
 srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))
-
+```
 
 ## Requirements
 * gcc
