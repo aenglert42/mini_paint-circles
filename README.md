@@ -40,7 +40,7 @@ A "pixel" with a top left corner with a distance bigger or equal to 1 from the b
 The distance between two points (Xa,Ya) and (Xb,Yb) can be calculated with ```
 srqt((Xa - Xb) * (Xa - Xb) + (Ya - Yb) * (Ya - Yb))```.
 
-#### Configuration-file
+### Configuration-file
 The configuration-file serves as the "recipe" for the "drawing".
 
 The first line of the file defines the drawing zone. The program should not display anything outside of it. The format is as follows:
