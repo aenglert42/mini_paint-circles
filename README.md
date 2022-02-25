@@ -6,7 +6,6 @@ ASCII art. A program that will read a configuration-file that contains circle pa
   * [Allowed functions](#allowed-functions)
   * [Description](#description)
   * [Configuration-file](#configuration-file)
-* [Approach](#approach)
 * [Prerequisites](#prerequisites)
 * [How to launch](#how-to-launch)
 * [Example](#example)
@@ -14,6 +13,7 @@ ASCII art. A program that will read a configuration-file that contains circle pa
 
 
 ## Introduction
+###### <p align="right">Next: [Prerequisites](#prerequisites)&emsp;&emsp;[[Contents](#table-of-contents)]</p>
 ### Allowed functions
 fopen, fread, fscanf, fclose, write, malloc, calloc, realloc, free, memset, powf, sqrtf
 
@@ -61,13 +61,12 @@ TYPE X Y RADIUS CHAR
 * _RADIUS_: The radius of the circle. A float bigger than 0.
 * _CHAR_: The char used to draw the circle.
 
-## Approach
-Here I will explan, how I approached the problem.
-
 ## Prerequisites
+###### <p align="right">Next: [How to launch](#how-to-launch)&emsp;Previous: [Introduction](#introduction)&emsp;&emsp;[[Contents](#table-of-contents)]</p>
 * gcc (```sudo apt-get install gcc```)
 
 ## How to launch
+###### <p align="right">Next: [Example](#example)&emsp;Previous: [Prerequisites](#prerequisites)&emsp;&emsp;[[Contents](#table-of-contents)]</p>
 Compile the program as follows (using the "-lm" flag to link "<math.h>"):
 
 ```
@@ -82,9 +81,11 @@ For the required configuration-file format see: [Configuration-file](#configurat
 
 
 ## Example
+###### <p align="right">Next: [Notes](#notes)&emsp;Previous: [How to launch](#how-to-launch)&emsp;&emsp;[[Contents](#table-of-contents)]</p>
 _Screenshot of the terminal output using the example configuration-file "example2":_
 
 ![grafik](https://user-images.githubusercontent.com/80413516/154933714-7e821380-b55b-4b4d-ae9b-b2a1776e1e48.png)
 
 ## Notes
+###### <p align="right">Previous: [Example](#example)&emsp;&emsp;[[Contents](#table-of-contents)]</p>
 As it is only a small execise, I did not bother to properly free allocated memory.
